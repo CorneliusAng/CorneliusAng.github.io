@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 
 interface layoutProps {
-  pageTitle: string;
+  pageTitle: String;
   children: React.ReactNode;
 }
 
