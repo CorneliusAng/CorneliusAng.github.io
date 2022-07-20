@@ -6,8 +6,6 @@ import { Link } from 'gatsby';
 const navigation = [
   { name: "Home", link: "/", current: true },
   { name: "About", link: "/about", current: false },
-  { name: "Projects", link: "#", current: false },
-  { name: "Calendar", link: "#", current: false },
 ];
 
 function classNames(...classes) {
