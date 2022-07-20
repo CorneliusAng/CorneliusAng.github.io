@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-
+import Navbar from '../components/navbar'
 interface layoutProps {
   pageTitle: String;
   children: React.ReactNode;
@@ -9,6 +9,7 @@ interface layoutProps {
 const Layout = ({ pageTitle, children }: layoutProps) => {
   return (
     <div>
+      <Navbar/>
       <title>{pageTitle}</title>
       <nav>
         <ul>
