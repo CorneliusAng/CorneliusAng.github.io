@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcornelius_website=self.webpackChunkcornelius_website||[]).push([[49],{2766:function(e,n,t){t.r(n);var s=t(7294),u=t(1943);n.default=function(){return s.createElement(u.Z,{pageTitle:"About Me"},s.createElement("p",null,"Hi there! I'm Cornelius and I have so so many hobbies."))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-de366639579439dec516.js.map
