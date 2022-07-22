@@ -4,9 +4,9 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "gatsby";
 
 const navigation = [
-  { name: "Home", link: "/"},
-  { name: "About", link: "/about"},
-  { name: "Projects", link: "/projects"},
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Projects", link: "/projects" },
 ];
 
 const Navbar = () => {
@@ -54,12 +54,39 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <Link to="https://github.com/CorneliusAng">
                 <button
                   type="button"
-                  className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-gray-500 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <img
+                    className="hidden lg:block h-6 w-auto"
+                    src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+                    alt="Github"
+                  />
+                </button>
+                </Link>
+                <Link to="https://www.linkedin.com/in/cornelius-ang-782b24198/">
+                  <button
+                    type="button"
+                    className="bg-gray-500 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  >
+                    <img
+                      className="hidden lg:block h-6 w-auto"
+                      src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128219.png?token=exp=1658526160~hmac=4a16af0e4afae08b720a0d10c26f8970"
+                      alt="LinkedIn"
+                    />
+                  </button>
+                </Link>
+                <button
+                  type="button"
+                  className="bg-gray-500 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                >
+                  <img
+                    className="hidden lg:block h-6 w-auto"
+                    src="https://cdn-icons.flaticon.com/png/512/542/premium/542689.png?token=exp=1658526261~hmac=543cf4d30d61599b5fc397b9ff9ca3c4"
+                    alt="Email"
+                  />
                 </button>
               </div>
             </div>
