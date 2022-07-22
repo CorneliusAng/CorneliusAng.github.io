@@ -1,14 +1,15 @@
 import React, { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
 const navigation = [
-  { name: "Home", link: "/", current: true },
-  { name: "About", link: "/about", current: false },
+  { name: "Home", link: "/"},
+  { name: "About", link: "/about"},
+  { name: "Projects", link: "/projects"},
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -47,15 +48,8 @@ const Navbar = () => {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
-                        key={item.name}
                         to={item.link}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-800 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-3 py-2 rounded-md text-sm font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                       >
                         {item.name}
                       </Link>
@@ -146,14 +140,8 @@ const Navbar = () => {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
+                  href={item.link}
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {item.name}
                 </Disclosure.Button>
